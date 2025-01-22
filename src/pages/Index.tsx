@@ -1,11 +1,20 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Button } from "@/components/ui/button";
+import { Twitter } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-twitter-blue/10 to-transparent">
+      <div className="text-center space-y-6 max-w-2xl px-4">
+        <h1 className="text-4xl md:text-6xl font-heading font-bold text-foreground">
+          Bienvenue sur <span className="text-twitter-blue">XTrackr</span>
+        </h1>
+        <p className="text-xl text-muted-foreground">
+          Analysez et optimisez votre réseau X en quelques clics. Identifiez vos followers non réciproques et gérez vos abonnements efficacement.
+        </p>
+        <Button size="lg" className="bg-twitter-blue hover:bg-twitter-blue/90">
+          <Twitter className="mr-2 h-5 w-5" />
+          Se connecter avec X
+        </Button>
       </div>
     </div>
   );
